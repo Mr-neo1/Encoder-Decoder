@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Encoding/Decoding</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h2>Data Encoding/Decoding</h2>
+  
+  <label for="data">Enter data:</label>
+  <textarea id="data" rows="4"></textarea>
+
+  <label for="encodingType">Select encoding/decoding type:</label>
+  <select id="encodingType">
+    <option value="base32">Base32</option>
+    <option value="base64">Base64</option>
+    <option value="ascii85">Ascii85</option>
+    <option value="baudot">Baudot Code</option>
+    <option value="unicode">Unicode Code Points</option>
+    <option value="url">URL Encoding</option>
+    <option value="punycode">Punycode</option>
+    <option value="bootstring">Bootstring</option>
+    <option value="integer">Integer</option>
+  </select>
+
+  <label for="operationType">Select operation type:</label>
+  <select id="operationType">
+    <option value="encode">Encode</option>
+    <option value="decode">Decode</option>
+  </select>
+
+  <button onclick="performOperation()">Perform Operation</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
